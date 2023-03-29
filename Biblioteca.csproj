@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{730AB872-D927-4341-B264-BDA1B88854AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Biblioteca</RootNamespace>
+    <AssemblyName>Biblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugaCarte.Designer.cs">
+      <DependentUpon>AdaugaCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugStudent.Designer.cs">
+      <DependentUpon>AdaugStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiEliberare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiEliberare.Designer.cs">
+      <DependentUpon>DetaliiEliberare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaliiReturnare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaliiReturnare.Designer.cs">
+      <DependentUpon>DetaliiReturnare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliberare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliberare.Designer.cs">
+      <DependentUpon>Eliberare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detalii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalii.Designer.cs">
+      <DependentUpon>Detalii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajutor.Designer.cs">
+      <DependentUpon>Ajutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoStudenti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoStudenti.Designer.cs">
+      <DependentUpon>InfoStudenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Returnare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Returnare.Designer.cs">
+      <DependentUpon>Returnare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VizualizareCarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VizualizareCarti.Designer.cs">
+      <DependentUpon>VizualizareCarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugaCarte.resx">
+      <DependentUpon>AdaugaCarte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugStudent.resx">
+      <DependentUpon>AdaugStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalii.resx">
+      <DependentUpon>Detalii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiEliberare.resx">
+      <DependentUpon>DetaliiEliberare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaliiReturnare.resx">
+      <DependentUpon>DetaliiReturnare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliberare.resx">
+      <DependentUpon>Eliberare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajutor.resx">
+      <DependentUpon>Ajutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoStudenti.resx">
+      <DependentUpon>InfoStudenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Returnare.resx">
+      <DependentUpon>Returnare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VizualizareCarti.resx">
+      <DependentUpon>VizualizareCarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
